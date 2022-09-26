@@ -33,33 +33,33 @@ export function Home() {
          <Projects>
             <Title titleText={"Projetos"} />
             <CardProject
+               styles={{ background: "#c4ad3c40", color: "#c4ad3c" }}
+               firstText="ReactJS"
+               secondText="CSS"
                href="https://social-ignite.vercel.app/"
-               backgroundColor={{ background: "#1c4437df" }}
-               alt={"ignite social"}
+               backgroundColor={{ background: "#15795b40" }}
+               alt="ignite social"
                src={imageIgnite}
-               text={"Social Ignite"}
+               text="Social Ignite"
                description={"Simulador de rede social, comentários e likes dinâmicos."}
             />
             <CardProject
-               backgroundColor={{ background: "#942e2edf" }}
-               alt={"mdr"}
+               firstText="ReactJS"
+               secondText="Styled Components"
+               styles={{ background: "#c7488340", color: "#c74883" }}
+               backgroundColor={{ background: "#f0000040" }}
+               alt="mdr"
                src={imageMDR}
-               text={"Maudere"}
-               description={"Muito em breve"}
+               text="Maudere"
+               description="Muito em breve"
             />
             <CardProject
-               backgroundColor={{ background: "#942e2edf" }}
-               alt={"em breve"}
+               styles={{ visibility: "hidden" }}
+               backgroundColor={{ background: "#f0000040" }}
+               alt="em breve"
                src={imagePattern}
-               text={"Em breve"}
-               description={"Aguarde novidades!"}
-            />
-            <CardProject
-               backgroundColor={{ background: "#942e2edf" }}
-               alt={"soon"}
-               src={imagePattern}
-               text={"Em breve"}
-               description={"Aguarde novidades!"}
+               text="Em breve"
+               description="Aguarde novidades!"
             />
          </Projects>
       </Container>

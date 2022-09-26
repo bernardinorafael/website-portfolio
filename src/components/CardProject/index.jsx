@@ -1,14 +1,28 @@
-import { Container, Paragraph } from "./styles"
+import { Container, Header, ImageContainer, Paragraph } from "./styles"
 
-export function CardProject({ src, href, backgroundColor, alt, text, description }) {
+export function CardProject({
+   alt,
+   backgroundColor,
+   description,
+   firstText,
+   href,
+   secondText,
+   src,
+   styles,
+   text,
+}) {
    return (
       <Container>
          <a rel="noreferrer" target="_blank" href={href}>
-            <div style={backgroundColor}>
+            <ImageContainer style={backgroundColor}>
                <img height={35} src={src} alt={alt} />
-            </div>
+            </ImageContainer>
             <div>
-               <strong>{text}</strong>
+               <Header>
+                  <strong>{text}</strong>
+                  <span style={styles}>{firstText}</span>
+                  <span style={styles}>{secondText}</span>
+               </Header>
                <Paragraph>{description}</Paragraph>
             </div>
          </a>

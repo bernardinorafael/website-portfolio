@@ -10,7 +10,7 @@ export function WebApps() {
    return (
       <Container className={"animate__animated animate__fadeIn"}>
          <CardTools
-            backgroundColor={{ background: "#67297a97" }}
+            backgroundColor={{ background: "#23BCC540" }}
             text={"Canva"}
             description={"Design gráfico"}
             alt={"canva"}
@@ -31,7 +31,7 @@ export function WebApps() {
             src={imageGoogleFonts}
          />
          <CardTools
-            backgroundColor={{ background: "#4f8b66ae" }}
+            backgroundColor={{ background: "#019EFB40" }}
             text={"Coolors"}
             description={"Paleta de cores"}
             alt={"coolors"}

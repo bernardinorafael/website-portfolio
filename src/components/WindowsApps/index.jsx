@@ -13,28 +13,28 @@ export function WindowsApps() {
    return (
       <Container className={"animate__animated animate__fadeIn"}>
          <CardTools
-            backgroundColor={{ background: "#3f7886a7" }}
+            backgroundColor={{ background: "#2488C840" }}
             text={"Visual Studio Code"}
             description={"Editor de código"}
             alt={"visual studio code"}
             src={imageCode}
          />
          <CardTools
-            backgroundColor={{ background: "#39964960" }}
+            backgroundColor={{ background: "#2ebb5840" }}
             text={"Spotify"}
             description={"Streaming de música"}
             alt={"spotify"}
             src={imageSpotify}
          />
          <CardTools
-            backgroundColor={{ background: "#572b648f" }}
+            backgroundColor={{ background: "#642b5340" }}
             text={"Lightshot"}
             description={"Captura de tela"}
             alt={"lightshot"}
             src={imageLightshot}
          />
          <CardTools
-            backgroundColor={{ background: "#2c2d2ee1" }}
+            backgroundColor={{ background: "#5865F040" }}
             text={"Discord"}
             description={"Comunicação"}
             alt={"discord"}
