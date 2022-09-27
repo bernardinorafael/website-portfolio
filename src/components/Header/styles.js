@@ -29,7 +29,7 @@ export const Content = styled.div`
 
       a {
          border-radius: 10px;
-         margin-right: 0.5rem;
+         margin-right: 0.9rem;
       }
    }
 `

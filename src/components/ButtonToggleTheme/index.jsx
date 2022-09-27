@@ -3,8 +3,8 @@ import { BsMoonFill, BsSunFill } from "react-icons/bs"
 
 import { Button } from "./styles"
 
-import "animate.css"
 import { GlobalContext } from "../../Context/GlobalContext"
+import "animate.css"
 
 export function ButtonToggleTheme() {
    const { toggleTheme } = useContext(GlobalContext)

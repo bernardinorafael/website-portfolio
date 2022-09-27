@@ -19,19 +19,19 @@ export function Home() {
             <Title titleText={"Hello, I'm Rafael 👋"} />
             <p>
                Desenvolvedor web, nascido em Criciúma, Santa Catarina, região sul do país
-               e atualmente morando em Sobral, Ceará, região nordeste.{" "}
+               e atualmente morando em Sobral, Ceará, região nordeste.
                <span>
                   É uma longa história sobre como eu vim parar aqui, vamos marcar um café
                   para contar toda a história
-               </span>{" "}
+               </span>
                Meu contato com a tecnologia veio desde cedo, minha família sempre foi
                conectada com informática e computadores. Já estive na área têxtil, um
-               segmento muito forte na minha região, mas me reencontrei no mundo tech.{" "}
+               segmento muito forte na minha região, mas me reencontrei no mundo tech.
             </p>
          </Content>
 
          <Projects>
-            <Title titleText={"Projetos"} />
+            <Title titleText="Projetos" />
             <CardProject
                styles={{ background: "#c4ad3c40", color: "#c4ad3c" }}
                firstText="ReactJS"
@@ -41,7 +41,7 @@ export function Home() {
                alt="ignite social"
                src={imageIgnite}
                text="Social Ignite"
-               description={"Simulador de rede social, comentários e likes dinâmicos."}
+               description="Simulador de rede social, comentários e likes dinâmicos."
             />
             <CardProject
                firstText="ReactJS"

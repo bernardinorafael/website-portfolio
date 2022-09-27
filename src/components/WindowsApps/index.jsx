@@ -27,13 +27,6 @@ export function WindowsApps() {
             src={imageSpotify}
          />
          <CardTools
-            backgroundColor={{ background: "#642b5340" }}
-            text={"Lightshot"}
-            description={"Captura de tela"}
-            alt={"lightshot"}
-            src={imageLightshot}
-         />
-         <CardTools
             backgroundColor={{ background: "#5865F040" }}
             text={"Discord"}
             description={"Comunicação"}
