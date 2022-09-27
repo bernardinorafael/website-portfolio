@@ -19,14 +19,11 @@ export function Home() {
             <Title titleText={"Hello, I'm Rafael 👋"} />
             <p>
                Desenvolvedor web, nascido em Criciúma, Santa Catarina, região sul do país
-               e atualmente morando em Sobral, Ceará, região nordeste.
-               <span>
-                  É uma longa história sobre como eu vim parar aqui, vamos marcar um café
-                  para contar toda a história
-               </span>
-               Meu contato com a tecnologia veio desde cedo, minha família sempre foi
-               conectada com informática e computadores. Já estive na área têxtil, um
-               segmento muito forte na minha região, mas me reencontrei no mundo tech.
+               <br />e atualmente morando em Sobral, Ceará. Meu contato com a tecnologia
+               veio desde cedo, minha família sempre foi envolvida com a informática. Já
+               estive na área têxtil, um segmento onde a indústria é bem estabelecida em
+               Santa Catarina, porém no decorrer do tempo, me reencontrei na área da
+               tecnologia.
             </p>
          </Content>
 
