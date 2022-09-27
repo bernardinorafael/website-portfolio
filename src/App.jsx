@@ -10,6 +10,7 @@ import { Stacks } from "./components/Stacks"
 import { WebApps } from "./components/WebApps"
 import { WindowsApps } from "./components/WindowsApps"
 import { About } from "./pages/About"
+import { Bookmarks } from "./pages/Bookmarks"
 import { Home } from "./pages/Home"
 import { Tools } from "./pages/Tools"
 import { GlobalStyles } from "./styles/global-styles"
@@ -33,6 +34,7 @@ export function App() {
                </Route>
 
                <Route path={"/about"} element={<About />} />
+               <Route path="/bookmarks" element={<Bookmarks />} />
             </Routes>
             <Footer />
          </BrowserRouter>

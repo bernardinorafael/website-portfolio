@@ -18,6 +18,7 @@ export const light = {
       greenColor: "#038C3E",
       bgButtons: "#E0E9F5",
       outlineColor: "#A09ABC",
+      colorIconMenu: "#C5C392",
    },
 }
 
@@ -41,5 +42,6 @@ export const dark = {
       greenBackground: "#9ae6b429",
       bgButtons: "#282826",
       outlineColor: "#A09ABC",
+      colorIconMenu: "#F48668",
    },
 }

@@ -1,15 +1,13 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { BsMoonFill, BsSunFill } from "react-icons/bs"
 
 import { Button } from "./styles"
 
-import { GlobalContext } from "../../Context/GlobalContext"
 import "animate.css"
+import { GlobalContext } from "../../Context/GlobalContext"
 
 export function ButtonToggleTheme() {
-   const { toggleTheme } = useContext(GlobalContext)
-
-   const [isDarkMode, setIsDarkMode] = useState(true)
+   const { toggleTheme, isDarkMode, setIsDarkMode } = useContext(GlobalContext)
 
    function handleToggleDarkMode() {
       setIsDarkMode(!isDarkMode)
