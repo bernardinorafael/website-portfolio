@@ -8,13 +8,13 @@ import { BiDotsHorizontalRounded, BiDotsVerticalRounded } from "react-icons/bi"
 export function ButtonOptions({ onShowDropDownMenu }) {
    const [clicked, setClicked] = useState(false)
 
-   function toggleButtonIcon() {
+   function toggleButtonMenuDropDown() {
       setClicked(!clicked)
       onShowDropDownMenu()
    }
 
    return (
-      <Container onClick={toggleButtonIcon}>
+      <Container onClick={toggleButtonMenuDropDown}>
          {clicked ? (
             <BiDotsVerticalRounded
                className={"animate__animated animate__bounceIn animate__faster"}

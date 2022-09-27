@@ -9,6 +9,7 @@ export const Container = styled.button`
    font-size: 1.1rem;
    line-height: 1.1rem;
    padding: 0.8rem;
+   visibility: hidden;
 
    &:hover {
       color: ${(props) => props.theme.colors.primaryWhite};
