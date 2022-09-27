@@ -39,7 +39,7 @@ export function Header() {
 
             <ButtonToggleTheme />
          </Content>
-         {!showDropDownMenu && <DropDownMenu />}
+         {!!showDropDownMenu && <DropDownMenu />}
       </Container>
    )
 }
