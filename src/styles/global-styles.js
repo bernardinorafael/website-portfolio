@@ -24,6 +24,12 @@ export const GlobalStyles = createGlobalStyle`
 		box-shadow: 0 0 0 3px ${(props) => props.theme.colors.outlineColor};
 	}
 
+	[disabled] {
+		cursor: not-allowed;
+		opacity: 0.5;
+		background: transparent;
+	}
+
 	body,
 	input,
 	textarea,

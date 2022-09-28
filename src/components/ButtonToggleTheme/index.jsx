@@ -7,24 +7,22 @@ import "animate.css"
 import { GlobalContext } from "../../Context/GlobalContext"
 
 export function ButtonToggleTheme() {
-   const { toggleTheme, isDarkMode, setIsDarkMode } = useContext(GlobalContext)
+    const { toggleTheme, isDarkMode, setIsDarkMode } = useContext(GlobalContext)
 
-   function handleToggleDarkMode() {
-      setIsDarkMode(!isDarkMode)
-      toggleTheme()
-   }
+    function handleToggleDarkMode() {
+        setIsDarkMode(!isDarkMode)
+        toggleTheme()
+    }
 
-   return (
-      <Button onClick={handleToggleDarkMode}>
-         {isDarkMode ? (
-            <BsSunFill
-               className={"animate__animated animate__bounceIn animate__faster"}
-            />
-         ) : (
-            <BsMoonFill
-               className={"animate__animated animate__bounceIn animate__faster"}
-            />
-         )}
-      </Button>
-   )
+    return (
+        <Button onClick={handleToggleDarkMode}>
+            {isDarkMode ? (
+                <BsSunFill className={"animate__animated animate__bounceIn animate__faster"} />
+            ) : (
+                <BsMoonFill
+                    className={"animate__animated animate__bounceIn animate__faster"}
+                />
+            )}
+        </Button>
+    )
 }

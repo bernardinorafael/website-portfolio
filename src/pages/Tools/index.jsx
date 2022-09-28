@@ -14,57 +14,57 @@ import { Container, Navbar, TitleContent } from "./styles"
 import { Helmet } from "react-helmet"
 
 export function Tools() {
-   const navigate = useNavigate()
+    const navigate = useNavigate()
 
-   useEffect(() => {
-      navigate("/tools/winapps")
-   }, [])
+    useEffect(() => {
+        navigate("/tools/winapps")
+    }, [])
 
-   return (
-      <Container className={"animate__animated animate__fadeIn"}>
-         <Helmet>
-            <title>Apps | Rafael Bernardino</title>
-         </Helmet>
+    return (
+        <Container className={"animate__animated animate__fadeIn"}>
+            <Helmet>
+                <title>Apps | Rafael Bernardino</title>
+            </Helmet>
 
-         <TitleContent>
-            <Title titleText={"Ferramentas"} />
-            <p>
-               Aqui está uma lista de ferramentas, extensões e apps que eu uso no meu dia a dia,
-               deixo também como recomendação experimentá-las.
-            </p>
-         </TitleContent>
+            <TitleContent>
+                <Title titleText={"Ferramentas"} />
+                <p>
+                    Aqui está uma lista de ferramentas, extensões e apps que eu uso no meu dia
+                    a dia, deixo também como recomendação experimentá-las.
+                </p>
+            </TitleContent>
 
-         <Navbar>
-            <NavLink to={"winapps"}>
-               <a className="button-menu-tools windows-apps">
-                  <FaWindows />
-                  <span>Windows</span>
-               </a>
-            </NavLink>
+            <Navbar>
+                <NavLink to={"winapps"}>
+                    <a className="button-menu-tools windows-apps">
+                        <FaWindows />
+                        <span>Windows</span>
+                    </a>
+                </NavLink>
 
-            <NavLink to={"webapps"}>
-               <a className="button-menu-tools web-apps">
-                  <TbWorldUpload />
-                  <span>Web</span>
-               </a>
-            </NavLink>
+                <NavLink to={"webapps"}>
+                    <a className="button-menu-tools web-apps">
+                        <TbWorldUpload />
+                        <span>Web</span>
+                    </a>
+                </NavLink>
 
-            <NavLink to={"chromeplugins"}>
-               <a className="button-menu-tools chrome-apps">
-                  <FaChrome />
-                  <span>Chrome</span>
-               </a>
-            </NavLink>
+                <NavLink to={"chromeplugins"}>
+                    <a className="button-menu-tools chrome-apps">
+                        <FaChrome />
+                        <span>Chrome</span>
+                    </a>
+                </NavLink>
 
-            <NavLink to={"stacks"}>
-               <a className="button-menu-tools stacks-apps">
-                  <AiFillTool />
-                  <span>Stacks</span>
-               </a>
-            </NavLink>
-         </Navbar>
+                <NavLink to={"stacks"}>
+                    <a className="button-menu-tools stacks-apps">
+                        <AiFillTool />
+                        <span>Stacks</span>
+                    </a>
+                </NavLink>
+            </Navbar>
 
-         <Outlet />
-      </Container>
-   )
+            <Outlet />
+        </Container>
+    )
 }

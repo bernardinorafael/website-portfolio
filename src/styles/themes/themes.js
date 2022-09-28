@@ -39,7 +39,7 @@ export const dark = {
       redColor: "#feb2b2",
       redBackground: "#feb2b229",
       greenColor: "#9ae6b4",
-      greenBackground: "#9ae6b429",
+      greenBackground: "#9ae6b440",
       bgButtons: "#282826",
       outlineColor: "#A09ABC",
       colorIconMenu: "#F48668",

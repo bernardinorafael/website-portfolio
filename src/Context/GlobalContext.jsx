@@ -5,47 +5,47 @@ import { dark, light } from "../styles/themes/themes"
 export const GlobalContext = createContext({})
 
 export function GlobalProvider({ children }) {
-   const [buttonDropDownClicked, setButtonDropDownClicked] = useState(false)
+    const [buttonDropDownClicked, setButtonDropDownClicked] = useState(false)
 
-   const [isDarkMode, setIsDarkMode] = useState(true)
+    const [isDarkMode, setIsDarkMode] = useState(true)
 
-   const [theme, setTheme] = useState(dark)
+    const [theme, setTheme] = useState(dark)
 
-   function toggleTheme() {
-      setTheme(theme.name === "dark" ? light : dark)
-      console.log("Tema alterado")
-   } //! Função e estado do toggle switcher theme
+    function toggleTheme() {
+        setTheme(theme.name === "dark" ? light : dark)
+        console.log("Tema alterado")
+    } //! Função e estado do toggle switcher theme
 
-   const [isModalEmailOpen, setIsModalEmailOpen] = useState(false)
-   function handleOpenModalEmail() {
-      setIsModalEmailOpen(true)
-   }
+    const [isModalEmailOpen, setIsModalEmailOpen] = useState(false)
+    function handleOpenModalEmail() {
+        setIsModalEmailOpen(true)
+    }
 
-   function handleCloseModalEmail() {
-      setIsModalEmailOpen(false)
-   } //! Estado do modal de e-mail e funções de abrir e fechar
+    function handleCloseModalEmail() {
+        setIsModalEmailOpen(false)
+    } //! Estado do modal de e-mail e funções de abrir e fechar
 
-   function handleBack() {
-      window.scrollTo({ top: 0, behavior: "smooth" })
-   } //! Função para scrollar ao topo
+    function handleBack() {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    } //! Função para scrollar ao topo
 
-   return (
-      <ThemeProvider theme={theme}>
-         <GlobalContext.Provider
-            value={{
-               buttonDropDownClicked,
-               setButtonDropDownClicked,
-               isDarkMode,
-               setIsDarkMode,
-               handleBack,
-               handleCloseModalEmail,
-               handleOpenModalEmail,
-               isModalEmailOpen,
-               toggleTheme,
-            }}
-         >
-            {children}
-         </GlobalContext.Provider>
-      </ThemeProvider>
-   )
+    return (
+        <ThemeProvider theme={theme}>
+            <GlobalContext.Provider
+                value={{
+                    buttonDropDownClicked,
+                    setButtonDropDownClicked,
+                    isDarkMode,
+                    setIsDarkMode,
+                    handleBack,
+                    handleCloseModalEmail,
+                    handleOpenModalEmail,
+                    isModalEmailOpen,
+                    toggleTheme,
+                }}
+            >
+                {children}
+            </GlobalContext.Provider>
+        </ThemeProvider>
+    )
 }
