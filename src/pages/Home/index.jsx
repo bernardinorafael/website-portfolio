@@ -20,7 +20,7 @@ export function Home() {
                 <p>
                     Desenvolvedor web, nascido em Criciúma, Santa Catarina, região sul do país
                     <br />e atualmente morando em Sobral, Ceará. Meu contato com a tecnologia
-                    veio desde cedo, minha fa mília sempre foi envolvida com a informática. Já
+                    veio desde cedo, minha família sempre foi envolvida com a informática. Já
                     estive na área têxtil, um segmento onde a indústria é bem estabelecida em
                     Santa Catarina, porém no decorrer do tempo, me reencontrei na área da
                     tecnologia.

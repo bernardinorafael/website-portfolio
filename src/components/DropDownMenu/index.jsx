@@ -4,8 +4,15 @@ import { Link } from "react-router-dom"
 import "animate.css"
 import { BsCodeSlash, BsFillBookmarkFill } from "react-icons/bs"
 import { HiNewspaper } from "react-icons/hi"
+import { useEffect } from "react"
 
 export function DropDownMenu({ ShowDropDownMenu }) {
+    useEffect(() => {
+        setTimeout(() => {
+            ShowDropDownMenu()
+        }, 3000)
+    }, [])
+
     function handleCloseDropDownMenu() {
         setTimeout(() => {
             ShowDropDownMenu()

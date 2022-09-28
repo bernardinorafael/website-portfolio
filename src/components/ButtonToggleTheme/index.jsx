@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { BsMoonFill, BsSunFill } from "react-icons/bs"
 
 import { Button } from "./styles"
