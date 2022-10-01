@@ -51,7 +51,7 @@ export function About() {
                     <GreenCard title="Biblioteca Javascript" text="React" />
                     <GreenCard text="Bons Filmes" />
                     <GreenCard title="Jogos" text="Counter Strike" />
-                    <GreenCard title="Animações japônesas" text="Anime" />
+                    <GreenCard title="Animações japonesas" text="Anime" />
                     <GreenCard text="Codar" />
                     <GreenCard title="Idioma inglês" text="Inglês" />
                     <GreenCard text="Pôr do Sol" />

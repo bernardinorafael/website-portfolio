@@ -1,7 +1,6 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect } from "react"
 import { NavLink, Outlet, useNavigate } from "react-router-dom"
+import { Helmet } from "react-helmet"
 
 import { Title } from "../../components/Title"
 
@@ -11,7 +10,6 @@ import { TbWorldUpload } from "react-icons/tb"
 import "animate.css"
 
 import { Container, Navbar, TitleContent } from "./styles"
-import { Helmet } from "react-helmet"
 
 export function Tools() {
     const navigate = useNavigate()

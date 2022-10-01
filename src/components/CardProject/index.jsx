@@ -1,15 +1,20 @@
 import { Container, Header, ImageContainer, Paragraph } from "./styles"
 
+import { FaGithub } from "react-icons/fa"
+import { useState } from "react"
+
 export function CardProject({
     alt,
-    backgroundColor,
-    description,
-    firstText,
-    href,
-    secondText,
     src,
-    styles,
+    href,
     text,
+    styles,
+    firstText,
+    hrefGithub,
+    secondText,
+    description,
+    children,
+    backgroundColor,
 }) {
     return (
         <Container>
@@ -26,6 +31,11 @@ export function CardProject({
                     <Paragraph>{description}</Paragraph>
                 </div>
             </a>
+            <div>
+                <a rel="noreferrer" target="_blank" href={hrefGithub}>
+                    {children}
+                </a>
+            </div>
         </Container>
     )
 }

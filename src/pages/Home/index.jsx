@@ -1,11 +1,10 @@
 import { Helmet } from "react-helmet"
-import { CardProject } from "../../components/CardProject"
-import { Title } from "../../components/Title"
-
+import { FaGithub } from "react-icons/fa"
 import imageIgnite from "../../assets/ignite-logo.svg"
 import imagePattern from "../../assets/initial.svg"
 import imageMDR from "../../assets/white-bg-mdr-logotipo-navbar.svg"
-
+import { CardProject } from "../../components/CardProject"
+import { Title } from "../../components/Title"
 import { Container, Content, Projects } from "./styles"
 
 export function Home() {
@@ -29,35 +28,48 @@ export function Home() {
 
             <Projects>
                 <Title titleText="Projetos" />
+
                 <CardProject
-                    styles={{ background: "#c4ad3c40", color: "#c4ad3c" }}
-                    firstText="ReactJS"
-                    secondText="CSS"
-                    href="https://social-ignite.vercel.app/"
-                    backgroundColor={{ background: "#15795b40" }}
                     alt="ignite social"
-                    src={imageIgnite}
-                    text="Social Ignite"
+                    backgroundColor={{ background: "#15795b40" }}
                     description="Simulador de rede social, comentários e likes dinâmicos."
-                />
+                    firstText="ReactJS"
+                    href="https://social-ignite.vercel.app/"
+                    secondText="CSS"
+                    src={imageIgnite}
+                    styles={{ background: "#c4ad3c40", color: "#c4ad3c" }}
+                    text="Social Ignite"
+                >
+                    <div>
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href={"https://github.com/bernardinorafael/social-ignite"}
+                        >
+                            <FaGithub size={30} />
+                        </a>
+                    </div>
+                </CardProject>
+
                 <CardProject
+                    alt="mdr"
+                    backgroundColor={{ background: "#f0000040" }}
+                    description="Muito em breve"
                     firstText="ReactJS"
                     secondText="Styled Components"
-                    styles={{ background: "#c7488340", color: "#c74883" }}
-                    backgroundColor={{ background: "#f0000040" }}
-                    alt="mdr"
                     src={imageMDR}
+                    styles={{ background: "#c7488340", color: "#c74883" }}
                     text="Maudere"
-                    description="Muito em breve"
-                />
+                ></CardProject>
+
                 <CardProject
-                    styles={{ visibility: "hidden" }}
-                    backgroundColor={{ background: "#f0000040" }}
                     alt="em breve"
-                    src={imagePattern}
-                    text="Em breve"
+                    backgroundColor={{ background: "#f0000040" }}
                     description="Aguarde novidades!"
-                />
+                    src={imagePattern}
+                    styles={{ visibility: "hidden" }}
+                    text="Em breve"
+                ></CardProject>
             </Projects>
         </Container>
     )
