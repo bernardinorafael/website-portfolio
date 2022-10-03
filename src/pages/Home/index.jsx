@@ -1,11 +1,12 @@
 import { Helmet } from "react-helmet"
 import { FaGithub } from "react-icons/fa"
-import imageIgnite from "../../assets/ignite-logo.svg"
-import imagePattern from "../../assets/initial.svg"
-import imageMDR from "../../assets/white-bg-mdr-logotipo-navbar.svg"
 import { CardProject } from "../../components/CardProject"
 import { Title } from "../../components/Title"
 import { Container, Content, Projects } from "./styles"
+
+import imageIgnite from "../../assets/costs.png"
+import imagePattern from "../../assets/initial.svg"
+import imageMDR from "../../assets/white-bg-mdr-logotipo-navbar.svg"
 
 export function Home() {
     return (
@@ -30,21 +31,21 @@ export function Home() {
                 <Title titleText="Projetos" />
 
                 <CardProject
-                    alt="ignite social"
+                    alt="costs"
                     backgroundColor={{ background: "#15795b40" }}
-                    description="Simulador de rede social, comentários e likes dinâmicos."
+                    description="Aplicação para controle financeiro"
                     firstText="ReactJS"
-                    href="https://social-ignite.vercel.app/"
-                    secondText="CSS"
+                    href="https://costs-money.vercel.app/"
+                    secondText="Styled Components"
                     src={imageIgnite}
                     styles={{ background: "#c4ad3c40", color: "#c4ad3c" }}
-                    text="Social Ignite"
+                    text="Costs"
                 >
                     <div>
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href={"https://github.com/bernardinorafael/social-ignite"}
+                            href="https://github.com/bernardinorafael/costs"
                         >
                             <FaGithub size={30} />
                         </a>

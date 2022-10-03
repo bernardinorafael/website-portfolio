@@ -7,11 +7,9 @@ import { CardsBookmarks } from "../../components/CardsBookmarks"
 
 import imageHaikei from "../../assets/ImageBookmarks/haikei.png"
 import imagePinterest from "../../assets/ImageBookmarks/pinterest.png"
-import imageW3 from "../../assets/ImageBookmarks/w3c.png"
 import imageMockflow from "../../assets/ImageBookmarks/mockflow.png"
 import imageStackOverflow from "../../assets/ImageBookmarks/stack.png"
 import imageUnsplash from "../../assets/ImageBookmarks/unsplash.png"
-import imageManyPixels from "../../assets/ImageBookmarks/manypixels.png"
 import imageFotor from "../../assets/ImageBookmarks/fotor.png"
 import imageBehance from "../../assets/ImageBookmarks/behance.png"
 
