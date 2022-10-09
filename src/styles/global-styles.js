@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
 
 	:focus {
 		outline: transparent;
-		box-shadow: 0 0 0 3px ${(props) => props.theme.colors.outlineColor};
+		box-shadow: 0 0 0 2px ${(props) => props.theme.colors.outlineColor};
 	}
 
 	[disabled] {
@@ -57,7 +57,6 @@ export const GlobalStyles = createGlobalStyle`
 		cursor: not-allowed;
 	}
 
-	/* scrollbar */
 	::-webkit-scrollbar-track {
 		background-color: transparent;
 	}

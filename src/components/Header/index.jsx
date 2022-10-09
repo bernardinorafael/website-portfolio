@@ -7,16 +7,10 @@ import { ButtonToggleTheme } from "../ButtonToggleTheme"
 
 import imageHeader from "../../assets/header-image.png"
 import { ButtonOptions } from "../ButtonOptions"
-import { DropDownMenu } from "../DropDownMenu"
 import { Button, Container, Content } from "./styles"
 
 export function Header() {
-    const [showDropDownMenu, setShowDropDownMenu] = useState(false)
     const { handleBack } = useContext(GlobalContext)
-
-    function handleDropDownMenu() {
-        setShowDropDownMenu(!showDropDownMenu)
-    }
 
     return (
         <Container>
@@ -34,12 +28,10 @@ export function Header() {
                     <NavLink to="tools">
                         <ButtonNavbar onClick={handleBack} buttonText="Apps" />
                     </NavLink>
-                    <ButtonOptions onShowDropDownMenu={handleDropDownMenu} />
+                    <ButtonOptions />
                 </nav>
-
                 <ButtonToggleTheme />
             </Content>
-            {!!showDropDownMenu && <DropDownMenu ShowDropDownMenu={handleDropDownMenu} />}
         </Container>
     )
 }

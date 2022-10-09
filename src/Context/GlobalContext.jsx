@@ -5,8 +5,6 @@ import { dark, light } from "../styles/themes/themes"
 export const GlobalContext = createContext({})
 
 export function GlobalProvider({ children }) {
-    const [buttonDropDownClicked, setButtonDropDownClicked] = useState(false)
-
     const [isDarkMode, setIsDarkMode] = useState(true)
 
     const [theme, setTheme] = useState(dark)
@@ -33,8 +31,6 @@ export function GlobalProvider({ children }) {
         <ThemeProvider theme={theme}>
             <GlobalContext.Provider
                 value={{
-                    buttonDropDownClicked,
-                    setButtonDropDownClicked,
                     isDarkMode,
                     setIsDarkMode,
                     handleBack,

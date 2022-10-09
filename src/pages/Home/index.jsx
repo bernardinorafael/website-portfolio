@@ -1,11 +1,10 @@
 import { Helmet } from "react-helmet"
-import { FaGithub } from "react-icons/fa"
 import { CardProject } from "../../components/CardProject"
 import { Title } from "../../components/Title"
 import { Container, Content, Projects } from "./styles"
 
-import imageIgnite from "../../assets/costs.png"
 import imagePattern from "../../assets/initial.svg"
+import imageIgnite from "../../assets/logo-nform.svg"
 import imageMDR from "../../assets/white-bg-mdr-logotipo-navbar.svg"
 
 export function Home() {
@@ -31,29 +30,17 @@ export function Home() {
                 <Title titleText="Projetos" />
 
                 <CardProject
-                    alt="costs"
                     backgroundColor={{ background: "#15795b40" }}
-                    description="Aplicação para controle financeiro"
-                    firstText="ReactJS"
-                    href="https://costs-money.vercel.app/"
+                    description="Validação de formulários"
+                    firstText="TypeScript"
+                    href="https://github.com/bernardinorafael/users-form"
                     secondText="Styled Components"
                     src={imageIgnite}
                     styles={{ background: "#c4ad3c40", color: "#c4ad3c" }}
-                    text="Costs"
-                >
-                    <div>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/bernardinorafael/costs"
-                        >
-                            <FaGithub size={30} />
-                        </a>
-                    </div>
-                </CardProject>
+                    text="N.Form"
+                />
 
                 <CardProject
-                    alt="mdr"
                     backgroundColor={{ background: "#f0000040" }}
                     description="Muito em breve"
                     firstText="ReactJS"
@@ -61,7 +48,7 @@ export function Home() {
                     src={imageMDR}
                     styles={{ background: "#c7488340", color: "#c74883" }}
                     text="Maudere"
-                ></CardProject>
+                />
 
                 <CardProject
                     alt="em breve"
@@ -70,7 +57,7 @@ export function Home() {
                     src={imagePattern}
                     styles={{ visibility: "hidden" }}
                     text="Em breve"
-                ></CardProject>
+                />
             </Projects>
         </Container>
     )

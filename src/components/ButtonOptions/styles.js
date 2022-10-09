@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Container = styled.button`
+export const ContainerButton = styled.button`
     align-items: center;
     background: ${(props) => props.theme.colors.background750};
     border-radius: 30px;

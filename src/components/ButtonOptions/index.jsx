@@ -1,23 +1,21 @@
-import { useEffect, useState } from "react"
-import { Container } from "./styles"
-
+import * as Menu from "@radix-ui/react-dropdown-menu"
 import "animate.css"
-
 import { BiDotsVerticalRounded } from "react-icons/bi"
+import { DropdownContent } from "../DropdownContent"
+import { ContainerButton } from "./styles"
 
-export function ButtonOptions({ onShowDropDownMenu }) {
-    const [buttonDropDownClicked, setButtonDropDownClicked] = useState(false)
-
-    function toggleButtonMenuDropDown() {
-        setButtonDropDownClicked(!buttonDropDownClicked)
-        onShowDropDownMenu()
-    }
-
+export function ButtonOptions() {
     return (
-        <Container onMouseEnter={toggleButtonMenuDropDown} onClick={toggleButtonMenuDropDown}>
-            <BiDotsVerticalRounded
-                className={"animate__animated animate__bounceIn animate__faster"}
-            />
-        </Container>
+        <Menu.Root>
+            <Menu.Trigger asChild>
+                <ContainerButton>
+                    <BiDotsVerticalRounded
+                        className={"animate__animated animate__bounceIn animate__faster"}
+                    />
+                </ContainerButton>
+            </Menu.Trigger>
+
+            <DropdownContent />
+        </Menu.Root>
     )
 }
