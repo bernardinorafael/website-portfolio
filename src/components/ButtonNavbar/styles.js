@@ -6,11 +6,11 @@ export const Button = styled.div`
     border: 0;
     font-size: 1rem;
     font-weight: 500;
-    line-height: 1rem;
-    padding: 0.8em 1.2rem;
-	
+    line-height: 1rem 0.5rem;
+    padding: 0.8rem;
+
     &:hover {
-		background: ${(props) => props.theme.colors.bgButtons};
+        background: ${(props) => props.theme.colors.bgButtons};
         color: ${(props) => props.theme.colors.primaryWhite};
         transition: 0.2s;
     }

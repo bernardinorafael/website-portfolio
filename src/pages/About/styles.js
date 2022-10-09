@@ -4,11 +4,10 @@ import * as Accordion from "@radix-ui/react-accordion"
 
 export const Container = styled.main`
     --animate-duration: 0.1s;
-    margin: 8rem auto;
-    max-width: 780px;
-    min-height: calc(100vh - 5rem);
-    padding: 0 2rem;
+    margin: 8rem auto 0;
     width: 100%;
+    padding: 0 2rem;
+    max-width: 780px;
 `
 
 export const CardSection = styled.section`

@@ -2,11 +2,10 @@ import styled from "styled-components"
 
 export const Container = styled.main`
     --animate-duration: 0.4s;
-    margin: 8rem auto;
-    max-width: 780px;
-    min-height: 100vh;
-    padding: 0 2rem;
+    margin: 8rem auto 0;
     width: 100%;
+    padding: 0 2rem;
+    max-width: 780px;
 `
 
 export const TitleContent = styled.section`

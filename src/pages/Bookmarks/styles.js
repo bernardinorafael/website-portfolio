@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.main`
     --animate-duration: 0.4s;
-    margin: 8rem auto 0;
+    margin: 8rem auto 3rem;
     width: 100%;
     padding: 0 2rem;
     max-width: 780px;

@@ -29,6 +29,7 @@ export const GlobalStyles = createGlobalStyle`
 		opacity: 0.5;
 		background: transparent;
 	}
+
 	
 	body,
 	input,
@@ -41,7 +42,7 @@ export const GlobalStyles = createGlobalStyle`
 	
 	body {
 		-webkit-font-smoothing: antialiased;
-		overflow: hidden;
+		/* overflow: hidden; */
 	}
 	
 	button {
@@ -58,7 +59,7 @@ export const GlobalStyles = createGlobalStyle`
 		cursor: not-allowed;
 	}
 
-	/* ::-webkit-scrollbar-track {
+	::-webkit-scrollbar-track {
 		background-color: transparent;
 	}
 
@@ -72,7 +73,7 @@ export const GlobalStyles = createGlobalStyle`
 		background: ${(props) => props.theme.colors.background750};
 		border-radius: 0.5rem;
 
-	} */
+	}
 
 	.active {
 		div {

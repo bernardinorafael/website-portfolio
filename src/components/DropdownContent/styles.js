@@ -2,6 +2,7 @@ import * as Menu from "@radix-ui/react-dropdown-menu"
 import styled from "styled-components"
 
 export const Content = styled(Menu.Content)`
+    --animate-duration: 0.2s;
     display: flex;
     flex-direction: column;
     background: ${(props) => props.theme.colors.background750};
@@ -10,6 +11,10 @@ export const Content = styled(Menu.Content)`
     height: 10rem;
     border-radius: 6px;
     padding: 1rem 0;
+
+	&:focus {
+		box-shadow: none;
+	}
 `
 
 export const Arrow = styled(Menu.Arrow)`
@@ -21,7 +26,7 @@ export const ItemMenu = styled(Menu.Item)`
     align-items: center;
     gap: 0.5rem;
     padding: 0 0.5rem;
-	border-radius: 6px;
+    border-radius: 6px;
     height: 3rem;
     user-select: none;
     background: ${(props) => props.theme.colors.bgButtons};

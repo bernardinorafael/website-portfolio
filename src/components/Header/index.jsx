@@ -2,16 +2,16 @@ import { NavLink } from "react-router-dom"
 import { ButtonNavbar } from "../ButtonNavbar"
 
 import { useContext } from "react"
+import { BsFillPersonFill } from "react-icons/bs"
 import { GlobalContext } from "../../Context/GlobalContext"
 import { ButtonToggleTheme } from "../ButtonToggleTheme"
-import { BsFillPersonFill } from "react-icons/bs"
 
 import * as Hover from "@radix-ui/react-hover-card"
 
 import imageHeader from "../../assets/header-image.png"
 import { ButtonOptions } from "../ButtonOptions"
-import { Button, ContactButton, Container, Content } from "./styles"
 import { ContactCard } from "../ContactCard"
+import { Button, ContactButton, Container, Content } from "./styles"
 
 export function Header() {
     const { handleBack } = useContext(GlobalContext)
@@ -46,13 +46,6 @@ export function Header() {
                     </Hover.Root>
 
                     <ButtonOptions />
-
-
-
-					
-
-
-
                 </nav>
                 <ButtonToggleTheme />
             </Content>

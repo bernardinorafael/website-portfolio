@@ -1,10 +1,8 @@
 import * as Hover from "@radix-ui/react-hover-card"
 import { FaGithub, FaLinkedin, FaMailBulk, FaTwitter, FaWhatsapp } from "react-icons/fa"
-import { FiCheckSquare, FiCopy } from "react-icons/fi"
 import { Arrow, Content, ContentCard, EmailItemContent } from "./styles"
-
+import { FiCheckSquare, FiCopy } from "react-icons/fi"
 import { useState } from "react"
-import { Link } from "react-router-dom"
 
 export function ContactCard() {
     const [showCopyButton, setShowCopyButton] = useState(true)

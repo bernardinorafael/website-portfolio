@@ -3,6 +3,9 @@ import Modal from "react-modal"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { GlobalProvider } from "./Context/GlobalContext"
 
+import * as Toast from "@radix-ui/react-toast"
+
+import styled from "styled-components"
 import { ChromeExtensions } from "./components/ChromeExtensions"
 import { Header } from "./components/Header"
 import { Stacks } from "./components/Stacks"

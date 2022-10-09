@@ -4,10 +4,17 @@ import { HiNewspaper } from "react-icons/hi"
 import { Link } from "react-router-dom"
 import { Arrow, Content, ItemMenu } from "./styles"
 
+import "animate.css"
+
 export function DropdownContent() {
     return (
         <Menu.Portal>
-            <Content arrowPadding={10} sideOffset={5} align="start">
+            <Content
+                className="animate__animated animate__zoomIn "
+                arrowPadding={10}
+                sideOffset={5}
+                align="start"
+            >
                 <Arrow width={12} height={8} />
 
                 <ItemMenu asChild>

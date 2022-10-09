@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components"
-
+import * as Toast from "@radix-ui/react-toast"
 import * as Hover from "@radix-ui/react-hover-card"
 
 const slideUpAndFade = keyframes({
@@ -47,9 +47,9 @@ export const ContentCard = styled.section`
     user-select: none;
     padding: 1rem 0;
 
-	hr {
-		border: 1px solid #333333;
-	}
+    hr {
+        border: 1px solid #333333;
+    }
 
     a {
         display: flex;
@@ -103,4 +103,9 @@ export const EmailItemContent = styled.button`
     svg {
         color: ${(props) => props.theme.colors.colorIconMenu};
     }
+`
+
+export const Root = styled(Toast.Root)`
+    border-radius: 8px;
+    height: 100vh;
 `
