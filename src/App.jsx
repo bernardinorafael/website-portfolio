@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { GlobalProvider } from "./Context/GlobalContext"
 
 import { ChromeExtensions } from "./components/ChromeExtensions"
-import { Footer } from "./components/Footer"
 import { Header } from "./components/Header"
 import { Stacks } from "./components/Stacks"
 import { WebApps } from "./components/WebApps"
@@ -36,7 +35,6 @@ export function App() {
                     <Route path={"/about"} element={<About />} />
                     <Route path="/bookmarks" element={<Bookmarks />} />
                 </Routes>
-                <Footer />
             </BrowserRouter>
         </GlobalProvider>
     )

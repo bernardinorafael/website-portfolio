@@ -1,40 +1,114 @@
 import styled from "styled-components"
+import { keyframes } from "styled-components"
+import * as Accordion from "@radix-ui/react-accordion"
 
 export const Container = styled.main`
-   --animate-duration: 0.1s;
-   margin: 8rem auto;
-   max-width: 780px;
-   min-height: calc(100vh - 5rem);
-   padding: 0 2rem;
-   width: 100%;
-
-   section {
-      margin-bottom: 3rem;
-
-      h2 {
-         border-bottom: 2px solid ${(props) => props.theme.colors.borderColor};
-         font-size: 2.2rem;
-         font-weight: 500;
-         margin-bottom: 1rem;
-         padding-bottom: 0.5rem;
-      }
-
-      p {
-         font-size: 1.3rem;
-         line-height: 1.8rem;
-         text-align: justify;
-         font-weight: 300;
-
-         span {
-            text-decoration: line-through;
-         }
-      }
-   }
+    --animate-duration: 0.1s;
+    margin: 8rem auto;
+    max-width: 780px;
+    min-height: calc(100vh - 5rem);
+    padding: 0 2rem;
+    width: 100%;
 `
 
 export const CardSection = styled.section`
-   display: flex;
-   flex-wrap: wrap;
-   gap: 0.5rem;
-   width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+	padding: 1rem 1.5rem;
+    gap: 0.5rem;
+    width: 100%;
+`
+
+export const AccordionRoot = styled(Accordion.Root)`
+    box-shadow: 10px 10px 36px -7px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+`
+
+const slideDown = keyframes({
+    from: { height: 0 },
+    to: { height: "var(--radix-accordion-content-height)" },
+})
+
+const slideUp = keyframes({
+    from: { height: "var(--radix-accordion-content-height)" },
+    to: { height: 0 },
+})
+
+export const Content = styled(Accordion.Content)`
+    background: ${(props) => props.theme.colors.backgroundSecondary};
+    font-size: 1.3rem;
+    border: 1px solid transparent;
+    line-height: 1.8rem;
+    text-align: justify;
+
+    &[data-state="open"] {
+        filter: brightness(0.85);
+        animation: ${slideDown} 0.3s ease-out;
+    }
+
+    &[data-state="closed"] {
+        animation: ${slideUp} 0.3s ease-out;
+    }
+`
+
+export const ContentText = styled.div`
+    p {
+        padding: 1rem 1.5rem;
+        text-align: left;
+    }
+`
+
+export const Item = styled(Accordion.Item)`
+    margin-top: 1;
+    overflow: hidden;
+    border: 1px solid ${(props) => props.theme.colors.backgroundSecondary};
+
+    &:first-child {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        margin-top: 0;
+    }
+
+    &:last-child {
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    &:focus-within {
+        z-index: 10;
+        border: 2px solid ${(props) => props.theme.colors.outlineColor};
+    }
+`
+
+export const Trigger = styled(Accordion.Trigger)`
+    align-items: center;
+    all: unset;
+    background: ${(props) => props.theme.colors.backgroundSecondary};
+    border-bottom: 1px solid ${(props) => props.theme.colors.borderColor};
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+
+    &:hover {
+        transition: 0.2s;
+        filter: brightness(1.1);
+    }
+
+    span {
+        border-bottom: 2px solid ${(props) => props.theme.colors.borderColor};
+        display: table;
+        font-size: 2.2rem;
+        font-weight: 500;
+
+        &.smile-cards {
+            border: 0;
+        }
+    }
+`
+
+export const Header = styled(Accordion.Header)`
+    /* all: unset; */
+    display: flex;
 `

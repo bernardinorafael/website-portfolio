@@ -21,16 +21,13 @@ export const ItemMenu = styled(Menu.Item)`
     align-items: center;
     gap: 0.5rem;
     padding: 0 0.5rem;
+	border-radius: 6px;
     height: 3rem;
     user-select: none;
     background: ${(props) => props.theme.colors.bgButtons};
 
     svg {
         color: ${(props) => props.theme.colors.colorIconMenu};
-    }
-
-    :focus {
-        box-shadow: none;
     }
 
     &:not(:disabled):hover {

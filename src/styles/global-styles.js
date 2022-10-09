@@ -6,19 +6,19 @@ export const GlobalStyles = createGlobalStyle`
 		margin: 0;
 		padding: 0;
 	}
-
+	
 	@media (max-width: 1080px) {
 		html {
 			font-size: 93.75%;
 		}
 	}
-
+	
 	@media (max-width: 720px) {
 		html {
 			font-size: 83.7%;
 		}
 	}
-
+	
 	:focus {
 		outline: transparent;
 		box-shadow: 0 0 0 2px ${(props) => props.theme.colors.outlineColor};
@@ -29,7 +29,7 @@ export const GlobalStyles = createGlobalStyle`
 		opacity: 0.5;
 		background: transparent;
 	}
-
+	
 	body,
 	input,
 	textarea,
@@ -38,16 +38,17 @@ export const GlobalStyles = createGlobalStyle`
 		color: ${(props) => props.theme.colors.textPrimary};
 		font: 400 1rem "IBM Plex Sans", sans-serif;;
 	}
-
+	
 	body {
 		-webkit-font-smoothing: antialiased;
+		overflow: hidden;
 	}
-
+	
 	button {
 		cursor: pointer;
 	}
-
-
+	
+	
 	a {
 		text-decoration: none;
 		color: inherit;
@@ -57,19 +58,21 @@ export const GlobalStyles = createGlobalStyle`
 		cursor: not-allowed;
 	}
 
-	::-webkit-scrollbar-track {
+	/* ::-webkit-scrollbar-track {
 		background-color: transparent;
 	}
 
 	::-webkit-scrollbar {
 		width: 0.4rem;
 		background: transparent;
+
 	}
 
 	::-webkit-scrollbar-thumb {
 		background: ${(props) => props.theme.colors.background750};
 		border-radius: 0.5rem;
-	}
+
+	} */
 
 	.active {
 		div {

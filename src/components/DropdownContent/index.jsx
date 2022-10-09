@@ -2,7 +2,7 @@ import * as Menu from "@radix-ui/react-dropdown-menu"
 import { BsCodeSlash, BsFillBookmarkFill } from "react-icons/bs"
 import { HiNewspaper } from "react-icons/hi"
 import { Link } from "react-router-dom"
-import { Content, Arrow, ItemMenu } from "./styles"
+import { Arrow, Content, ItemMenu } from "./styles"
 
 export function DropdownContent() {
     return (
