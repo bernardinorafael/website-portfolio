@@ -1,15 +1,14 @@
 import styled from "styled-components"
 
 export const Container = styled.section`
-    display: flex;
     align-items: center;
     background: ${(props) => props.theme.colors.cardBackground};
     border-radius: 0.8rem;
-    transition: 0.3s;
+    border: 1px solid ${(props) => props.theme.colors.background750};
+    display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
-    padding: 0.8rem;
-    border: 1px solid ${(props) => props.theme.colors.background750};
+    transition: 0.3s;
 
     svg {
         border-radius: 50%;
@@ -21,24 +20,21 @@ export const Container = styled.section`
         &:active {
             filter: brightness(0.8);
         }
-
-        .NoIcon {
-            display: none;
-        }
     }
 
     &:hover {
-        transform: translateY(-3px);
         box-shadow: 4px 6px 12px -8px rgb(0 0 0 / 75%);
+        transform: translateY(-3px);
     }
 
     a {
-        border-radius: 8px;
         align-items: center;
+        border-radius: 8px;
         display: flex;
+        flex: 1;
         gap: 1rem;
+        padding: 0.8rem;
         user-select: none;
-        width: 90%;
 
         span {
             color: ${(props) => props.theme.colors.textPrimary};
@@ -48,8 +44,8 @@ export const Container = styled.section`
 
 export const Paragraph = styled.p`
     color: ${(props) => props.theme.colors.textSecondary};
-    font-weight: 400;
     font-size: 1rem;
+    font-weight: 400;
 `
 
 export const Header = styled.div`
@@ -58,19 +54,19 @@ export const Header = styled.div`
 
     span {
         border-radius: 6px;
-        padding: 5px;
-        line-height: 0.8rem;
         font-size: 0.75rem;
         font-weight: 500;
+        line-height: 0.8rem;
+        padding: 5px;
     }
 `
 
 export const ImageContainer = styled.div`
+    align-items: center;
     background: transparent;
     border-radius: 0.5rem;
-    height: 3rem;
-    width: 3rem;
-    align-items: center;
     display: flex;
+    height: 3rem;
     justify-content: center;
+    width: 3rem;
 `

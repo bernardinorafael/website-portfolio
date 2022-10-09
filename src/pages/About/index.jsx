@@ -1,20 +1,18 @@
 import { Helmet } from "react-helmet"
-import * as Accordion from "@radix-ui/react-accordion"
+import { BsChevronBarContract } from "react-icons/bs"
 import { GreenCard } from "../../components/GreenCards"
 import { RedCard } from "../../components/RedCards"
-import { BsChevronBarContract } from "react-icons/bs"
 
 import {
+    AccordionRoot,
     CardSection,
     Container,
     Content,
-    Trigger,
+    ContentText,
     Header,
     Item,
-    AccordionRoot,
-    ContentText,
+    Trigger,
 } from "./styles"
-import { useState } from "react"
 
 export function About() {
     return (
@@ -91,21 +89,23 @@ export function About() {
 
                         <Content asChild>
                             <CardSection>
-                                <GreenCard title="Marvel filmes" text="Marvel" />
-                                <GreenCard title="Biblioteca Javascript" text="React" />
-                                <GreenCard text="Bons Filmes" />
-                                <GreenCard title="Jogos" text="Counter Strike" />
-                                <GreenCard title="Animações japonesas" text="Anime" />
-                                <GreenCard text="Codar" />
-                                <GreenCard title="Idioma inglês" text="Inglês" />
-                                <GreenCard text="Pôr do Sol" />
-                                <GreenCard
-                                    title="Tema Omni do Visual StudioCode"
-                                    text="Omni"
-                                />
-                                <GreenCard text="Café" />
-                                <GreenCard title="Streaming de vídeos" text="Twitch" />
-                                <GreenCard text="Cor Preto" />
+                                <div>
+                                    <GreenCard title="Marvel filmes" text="Marvel" />
+                                    <GreenCard title="Biblioteca Javascript" text="React" />
+                                    <GreenCard text="Bons Filmes" />
+                                    <GreenCard title="Jogos" text="Counter Strike" />
+                                    <GreenCard title="Animações japonesas" text="Anime" />
+                                    <GreenCard text="Codar" />
+                                    <GreenCard title="Idioma inglês" text="Inglês" />
+                                    <GreenCard text="Pôr do Sol" />
+                                    <GreenCard
+                                        title="Tema Omni do Visual StudioCode"
+                                        text="Omni"
+                                    />
+                                    <GreenCard text="Café" />
+                                    <GreenCard title="Streaming de vídeos" text="Twitch" />
+                                    <GreenCard text="Cor Preto" />
+                                </div>
                             </CardSection>
                         </Content>
                     </Item>
@@ -120,15 +120,17 @@ export function About() {
 
                         <Content asChild>
                             <CardSection>
-                                <RedCard text="Política" />
-                                <RedCard text="Tema Light" />
-                                <RedCard text="Desorganização" />
-                                <RedCard text="Engarrafamento" />
-                                <RedCard text="Filmes/Romance" />
-                                <RedCard text="Espinafre" />
-                                <RedCard text="Carne Bem Passada" />
-                                <RedCard text="Refrigerante" />
-                                <RedCard text="Multidão" />
+                                <div>
+                                    <RedCard text="Política" />
+                                    <RedCard text="Tema Light" />
+                                    <RedCard text="Desorganização" />
+                                    <RedCard text="Engarrafamento" />
+                                    <RedCard text="Filmes/Romance" />
+                                    <RedCard text="Espinafre" />
+                                    <RedCard text="Carne Bem Passada" />
+                                    <RedCard text="Refrigerante" />
+                                    <RedCard text="Multidão" />
+                                </div>
                             </CardSection>
                         </Content>
                     </Item>

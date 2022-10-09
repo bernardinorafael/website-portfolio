@@ -7,8 +7,8 @@ import { Arrow, Content, ItemMenu } from "./styles"
 export function DropdownContent() {
     return (
         <Menu.Portal>
-            <Content arrowPadding={10} sideOffset={8} align="start">
-                <Arrow width={15} height={12} />
+            <Content arrowPadding={10} sideOffset={5} align="start">
+                <Arrow width={12} height={8} />
 
                 <ItemMenu asChild>
                     <Link to="/bookmarks">

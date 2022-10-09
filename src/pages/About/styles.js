@@ -12,11 +12,13 @@ export const Container = styled.main`
 `
 
 export const CardSection = styled.section`
-    display: flex;
-    flex-wrap: wrap;
-	padding: 1rem 1.5rem;
-    gap: 0.5rem;
-    width: 100%;
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 1rem 1.5rem;
+    }
 `
 
 export const AccordionRoot = styled(Accordion.Root)`

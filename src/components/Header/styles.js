@@ -27,13 +27,19 @@ export const Content = styled.div`
     nav {
         align-items: center;
         display: flex;
+        gap: 1rem;
+
+        hr {
+            height: 50px;
+            border: 1px solid ${(props) => props.theme.colors.borderColor};
+        }
 
         a {
             border-radius: 10px;
-            margin-right: 1rem;
         }
     }
 `
+
 export const Button = styled.button`
     border: 0;
     display: flex;
@@ -51,5 +57,22 @@ export const Button = styled.button`
         height: 35px;
         background: transparent;
         border-style: none;
+    }
+`
+
+export const ContactButton = styled.button`
+    align-items: center;
+    border-radius: 30px;
+    border: 0;
+    display: flex;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    padding: 0.8rem;
+    background: ${(props) => props.theme.colors.bgButtons};
+
+    &:hover {
+        color: ${(props) => props.theme.colors.primaryWhite};
+        transition: 0.2s;
+        filter: brightness(0.95);
     }
 `
