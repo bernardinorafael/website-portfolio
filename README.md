@@ -8,7 +8,7 @@
 
 ## 📚 Seções
 
-O site é composto por três seções:
+O site é composto pelas seguintes seções.
 
 -   **Home:** Onde temos uma breve apresentação e meus projetos/futuros projetos
 -   **Sobre mim:** Nesta seção, temos um resumo mais detalhado sobre um pouco da minha história e experiência profissional
