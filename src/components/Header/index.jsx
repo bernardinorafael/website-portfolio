@@ -14,41 +14,41 @@ import { ContactCard } from "../ContactCard"
 import { Button, ContactButton, Container, Content } from "./styles"
 
 export function Header() {
-    const { handleBack } = useContext(GlobalContext)
+  const { handleBack } = useContext(GlobalContext)
 
-    return (
-        <Container>
-            <Content>
-                <NavLink to="/">
-                    <Button onClick={handleBack}>
-                        <img src={imageHeader} />
-                    </Button>
-                </NavLink>
+  return (
+    <Container>
+      <Content>
+        <NavLink to="/">
+          <Button onClick={handleBack}>
+            <img src={imageHeader} />
+          </Button>
+        </NavLink>
 
-                <nav>
-                    <NavLink to="about">
-                        <ButtonNavbar onClick={handleBack} buttonText="Sobre mim" />
-                    </NavLink>
-                    <NavLink to="tools">
-                        <ButtonNavbar onClick={handleBack} buttonText="Apps" />
-                    </NavLink>
+        <nav>
+          <NavLink to="about">
+            <ButtonNavbar onClick={handleBack} buttonText="Sobre mim" />
+          </NavLink>
+          <NavLink to="tools">
+            <ButtonNavbar onClick={handleBack} buttonText="Apps" />
+          </NavLink>
 
-                    <hr />
+          <hr />
 
-                    <Hover.Root openDelay={200} closeDelay={300}>
-                        <Hover.Trigger asChild>
-                            <ContactButton>
-                                <BsFillPersonFill />
-                            </ContactButton>
-                        </Hover.Trigger>
+          <Hover.Root openDelay={200} closeDelay={300}>
+            <Hover.Trigger asChild>
+              <ContactButton>
+                <BsFillPersonFill />
+              </ContactButton>
+            </Hover.Trigger>
 
-                        <ContactCard />
-                    </Hover.Root>
+            <ContactCard />
+          </Hover.Root>
 
-                    <ButtonOptions />
-                </nav>
-                <ButtonToggleTheme />
-            </Content>
-        </Container>
-    )
+          <ButtonOptions />
+        </nav>
+        <ButtonToggleTheme />
+      </Content>
+    </Container>
+  )
 }
